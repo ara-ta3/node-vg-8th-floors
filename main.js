@@ -88,7 +88,7 @@ module.exports = (placeName) => {
     }
     const start = place.start;
     const end   = place.end;
-    const ret   = floor;
+    const ret   = [].concat(floor);
     for (let y = start[1]; y < end[1]; y ++ ) {
         const line = ret[y];
         const split = line.split("");
